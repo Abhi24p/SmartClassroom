@@ -1,0 +1,23 @@
+1. Assemble the Circuit
+
+Connect sensors to Arduino input pins.
+
+Connect lights/fan to relay modules.
+
+Provide regulated 5V/12V supply to sensors.
+
+Connect LM35 to analog pin.
+
+2. Upload the Code
+
+Load the provided Arduino sketch into the Arduino IDE.
+
+Verify and upload to microcontroller.
+
+3. Testing
+
+Move in front of PIR to check automatic light switching.
+
+Heat LM35 sensor (e.g., by touching) to check fan control.
+
+Test IR sensor for entry detection.
