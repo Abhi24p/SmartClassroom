@@ -1,0 +1,14 @@
+Start
+   ↓
+Read PIR Input
+   ↓
+Motion detected? → Yes → Turn ON Light; Record time
+   ↓ No
+Has 30 sec passed with no motion? → Yes → Turn OFF Light
+   ↓
+Read LM35 Temperature
+   ↓
+Temperature > Threshold? → Yes → Turn ON Fan
+   ↓ No → Keep Fan OFF
+   ↓
+Repeat
