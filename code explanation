@@ -1,0 +1,37 @@
+The Arduino code performs three main tasks:
+
+a. Motion Detection (PIR Sensor)
+
+Detects motion using a PIR sensor connected to pin 21.
+
+When motion is detected:
+
+LED (or light) turns ON.
+
+Timestamp is recorded.
+
+If no motion is detected for 30 seconds, the LED turns OFF.
+  
+
+b. Temperature Reading (LM35)
+
+LM35 sensor connected to analog pin 14.
+
+Analog value is converted into Celsius using:
+
+temperature = (analogValue * 5.0 * 100.0) / 1024.0;
+
+
+c. Temperature Control
+
+If temperature crosses the threshold (e.g., 30°C):
+
+Another appliance (fan) can be activated.
+
+The code uses simple logic for automation:
+
+Motion = Light ON
+
+No motion = Light OFF
+
+High temperature = Fan ON
