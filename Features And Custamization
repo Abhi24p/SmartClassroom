@@ -1,0 +1,43 @@
+Automatic lighting control using PIR & IR sensors
+
+Automatic fan speed control using LM35/thermistor
+
+Power-saving of up to 86% per tube light
+
+Delay-based light OFF mechanism
+
+Suitable for classrooms, labs, corridors, offices
+
+No manual switch required
+
+Highly reliable system with relay safety features
+
+** Customization **
+
+You can customize:
+
+Time delay before switching OFF lights
+
+Temperature threshold for fan activation
+
+Number of sensors based on room size
+
+Fan speed levels instead of simple ON/OFF
+
+Dual sensor entry-exit counting
+
+** Further Customization **
+
+Advanced additions:
+
+IoT integration (mobile control & monitoring)
+
+Smart energy logging with cloud dashboards
+
+Automatic day/night detection using LDR
+
+Classroom occupancy counter (accurate human count)
+
+Voice control system using Google Assistant/Alexa
+
+Replace relay with TRIAC for smooth fan speed control
