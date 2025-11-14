@@ -1,0 +1,15 @@
+* When someone enters the classroom, PIR/IR sensors detect motion → lights turn ON automatically.
+
+* If the room becomes empty for set time (e.g., 30s–1min) → lights turn OFF.
+
+* Temperature sensor continuously monitors room temperature.
+
+* Fan speed is regulated based on temperature.
+
+This ensures:
+
+* Minimum human interaction
+
+* Efficient power consumption
+
+* Improved comfort for students
