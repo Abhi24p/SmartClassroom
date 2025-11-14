@@ -1,0 +1,7 @@
+| Component         | Arduino Pin             | Description                     |
+| ----------------- | ----------------------- | ------------------------------- |
+| PIR Sensor        | D21                     | Motion detection input          |
+| LED/Light         | D13                     | Output control                  |
+| LM35 Sensor       | A14                     | Temperature sensor analog input |
+| Relay (Fan/Light) | Digital pins via driver | Switches AC load                |
+| Power Supply      | VIN/GND                 | +5V/+12V supply                 |
