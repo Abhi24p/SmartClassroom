@@ -1,2 +1,24 @@
-# SmartClassroom
-The Smart Classroom system uses PIR, IR, LDR, and temperature sensors to detect occupancy, daylight, and room temperature. Lights switch ON when someone enters and OFF when the room is empty. Fan speed adjusts automatically. It saves energy, reduces manual effort, and improves comfort and accessibility.
+The Smart Classroom system is designed to automatically control electrical appliances—mainly lights and fans—using sensors.
+It reduces power wastage by detecting human presence, room temperature, and ambient lighting conditions using sensors like:
+
+PIR Sensor – detects motion/occupancy
+
+IR proximity sensor – detects entry/exit
+
+LDR – detects daylight
+
+Thermistor/LM35 – senses temperature
+
+When a student enters the classroom, lights turn ON automatically. When the room is empty, the lights turn OFF.
+Fan speed is automatically controlled depending on the room temperature.
+
+This system offers:
+
+Power savings
+
+Automation (no manual switching)
+
+Support for physically disabled individuals
+
+Efficient management of energy usage in educational institutes
+give me in short less than 350 characters
