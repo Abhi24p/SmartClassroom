@@ -1,0 +1,7 @@
+| Issue                          | Possible Cause               | Solution                      |
+| ------------------------------ | ---------------------------- | ----------------------------- |
+| Light not turning ON           | PIR sensor not detecting     | Adjust sensitivity / range    |
+| Fan not turning ON             | LM35 not calibrated          | Check wiring, threshold value |
+| Relay clicking repeatedly      | Loose power supply           | Tighten connections           |
+| PIR false triggers             | Direct sunlight interference | Cover sensor with black tape  |
+| Temperature readings incorrect | Wrong formula or pin         | Verify analog pin & scaling   |
