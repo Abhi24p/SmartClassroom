@@ -1,0 +1,30 @@
+Hardware Components
+
+Arduino / ATmega328P microcontroller
+
+PIR sensor
+
+IR proximity sensor
+
+LM35 temperature sensor
+
+Thermistor (optional alternative)
+
+12V Relay module
+
+Driver circuits
+
+LED indicator
+
+Fan & Light
+
+Power supply module
+
+Voltage regulator (LM78xx series)
+
+
+Software
+
+Arduino IDE
+
+C/C++ programming
