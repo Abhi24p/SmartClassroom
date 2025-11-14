@@ -1,0 +1,45 @@
+// Define the pins 
+const int pirPin = 21;          
+const int ledPin = 13;         
+SOFTWARE IMPLEMENTATION 
+// PIR sensor input pin 
+// LED output pin 
+const int lm35Pin = 14;        
+// LM35 analog input pin 
+const int tempThreshold = 15;  // Temperature threshold in Celsius 
+unsigned long motionDetectedTime = 0; 
+bool motionDetected = false; 
+void setup() { 
+pinMode(pirPin, INPUT); 
+pinMode(ledPin, OUTPUT); 
+Serial.begin(9600); 
+} 
+void loop() { 
+int pirState = digitalRead(pirPin); 
+// Check if motion is detected 
+if (pirState == HIGH) { 
+motionDetected = true; 
+motionDetectedTime = millis(); 
+digitalWrite(ledPin, HIGH); // Motion detected, turn on LED 
+Serial.println("Motion detected!"); 
+} 
+// Check if 30 seconds have passed since last motion detected 
+if (motionDetected && (millis() - motionDetectedTime > 30000)) { 
+motionDetected = false; 
+digitalWrite(ledPin, LOW); // Turn off LED 
+// Read temperature from LM35 
+int tempValue = analogRead(lm35Pin); 
+float temperature = (tempValue * 5.0 * 100.0) / 1024.0; 
+Serial.print("Temperature: "); 
+Serial.print(temperature); 
+Serial.println(" C"); 
+
+// Check if temperature exceeds threshold 
+if (temperature > tempThreshold) { 
+// Trigger response (e.g., turn on another LED or a fan) 
+Serial.println("Temperature is above 30C. Triggering response."); 
+// digitalWrite(responsePin, HIGH); // Uncomment and set the correct response pin 
+} 
+} 
+delay(1000); // Delay to reduce serial monitor spam 
+}
